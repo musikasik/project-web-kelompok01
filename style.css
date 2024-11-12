@@ -245,7 +245,8 @@ section{
     padding-bottom: 20px;
 }
 .top-artist .album-artis{
-    display: flex;
+    display: flex;   
+    width: 100%;
 }
 .top-artist .album-artis img{
     padding-bottom: 10px;
@@ -255,8 +256,9 @@ section{
     text-align: center;
     font-weight: bolder;
 }
-.aldi-taher{    
-    margin-top: 100px;
+.aldi-taher{  
+    width: 100%;  
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
