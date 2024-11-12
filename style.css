@@ -246,16 +246,27 @@ section{
 }
 .top-artist .album-artis{
     display: flex;   
-    width: 100%;
+    width: max-content;
+    gap: 1rem;
 }
 .top-artist .album-artis img{
     padding-bottom: 10px;
-    padding-right: 1.5rem;
+    width: 250px;
 }
 .top-artist .album-artis .nama-artis{
     text-align: center;
     font-weight: bolder;
+    padding-bottom: 20px;
 }
+
+.top-artist .album-scroll{
+    width: 100% ;
+    overflow-x: scroll;
+    scrollbar-color: red;
+}
+/* .album-scroll::-webkit-scrollbar{
+    display: none;
+} */
 .aldi-taher{  
     width: 100%;  
     margin-top: 1rem;
