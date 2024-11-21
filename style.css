@@ -1,5 +1,7 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 62.5%s;
 }
 /* CSS HEADER */
 body{
@@ -45,7 +47,7 @@ header .logo img{
     background-color: #f1b1b1;
     border-radius: 35px;
     padding: 10px 15px;
-    width: 37rem;
+    width: 45%;
 }
 .search-bar i {
     color: #fff;
@@ -206,11 +208,12 @@ section{
 
 /* MUSIC PLAYER */
 .musik{
+    position: relative;
+    left: 25%;
     margin-top: 50px;
     padding: 80px;
-    margin-left: 350px;
-    margin-right: 350px;
-    background: radial-gradient(#FFE3E3 40%,#FBA1B7, #f67280);
+    width: 35%;
+    background: linear-gradient(#ecc4c4 40%,#FBA1B7, #f67280);
     align-items: center;
     border-radius: 50px;
     box-shadow: 5px 8px 5px 5px #ff2f447c;
@@ -287,10 +290,8 @@ section{
     min-width: 100%;
     scroll-snap-align: start;
 }
-/* .album-scroll::-webkit-scrollbar{
-     display: none;
-    color: transparent;
-} */
+
+/* ALDI TAHER */
 .aldi-taher{  
     display: flex;
     align-items: center;
@@ -314,6 +315,7 @@ section{
     border-radius: 20px;
     box-shadow: 5px 8px 5px 5px rgba(0, 0, 0, 0.2);
 }
+/* BASKARA */
 .baskara{  
     display: flex;
     align-items: center;
