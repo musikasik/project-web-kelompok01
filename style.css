@@ -6,7 +6,6 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #f1b1b1;
-    
 }
 header{
     background: #f67280;
@@ -46,7 +45,7 @@ header .logo img{
     background-color: #f1b1b1;
     border-radius: 35px;
     padding: 10px 15px;
-    width: 40rem;
+    width: 37rem;
 }
 .search-bar i {
     color: #fff;
@@ -64,7 +63,6 @@ header .logo img{
     color: #fff;
 }
 .search-bar .home-icon {
-    /* background-color: #f67280; */
     border-radius: 50%;
     padding: 10px;
     margin-right: 10px;
@@ -85,12 +83,8 @@ header .menu a{
     font-weight: bold;
     padding: 8px;
     margin-right: 15px;
-
-    /* letter-spacing: 1px; */
 }
-
 header .menu a:hover{
-    /* background-color: #f1b1b1; */
     border-bottom: 2px solid white;
     color: rgb(255, 255, 255);
     border-radius: 7px 20px 7px 20px;
@@ -99,7 +93,7 @@ header .menu a:hover{
 }
 /* HERO SECTION */
 section{
-     padding-top: 10%;
+     padding-top: 7%;
      padding-bottom: 5%;
      padding-left: 5%;
      padding-right: 5%;
@@ -111,9 +105,8 @@ section{
     background: #FFE3E3;
     margin: 5%;
     border-radius: 40px;
-    margin-top: 8%;
+    margin-top: 8.5%;
     filter: drop-shadow(0 0 20px rgb(255, 0, 0)); 
-    
 }
 .home .content{
     width: 100%;
@@ -125,7 +118,6 @@ section{
 .home .content .content-left{
     width: 40%;
 }
-
 .home .content .content-left img{
     width: 60%;
     height: 60%;
@@ -134,6 +126,7 @@ section{
 }
 .home .content .content-right{
     width: 55%;
+    margin-top: -8%;
 }
 .home .content .content-right h1{
     text-transform: uppercase;
@@ -157,37 +150,15 @@ section{
     font-weight: bolder;
     color: #ffffff;
     text-decoration: none;
-    /* margin-right: 50px;
-    margin-left: 150px; */
 }
-/* .home .content .content-right .btn-right a button{
-    font-family: 'Poppins', sans-serif;
-    padding: 10px;
-    padding-left: 80px;
-    padding-right: 80px;
-    background-color: #61da75;
-    border:5px solid #61da75;
-    border-radius: 28px;
-    font-size: 1.3rem;
-    font-weight: bolder;
-    color: #ffffff;
-    text-decoration: none;
-} */
 .home .content .content-right .btn a button:hover{
     transition: 0.5s;
     background-color: #FFE3E3;
     border:5px solid #f67280;
     color: black;
-
 }
-/* .home .content .content-right .btn-right a button:hover{
-    transition: 0.5s;
-    background-color: #f1b1b1;
-    border:5px solid #61da75;
-    border-radius: 20px; 
-    color: black;
-} */
 
+/* TOP MUSIC SECTION */
 .list-lagu {
     display: flex;
     flex-wrap: wrap;
@@ -232,7 +203,143 @@ section{
     font-size: 14px;
     color: #d8d8d8;
 }
-.footer{
+
+/* MUSIC PLAYER */
+.musik{
+    margin-top: 50px;
+    padding: 80px;
+    margin-left: 350px;
+    margin-right: 350px;
+    background: radial-gradient(#FFE3E3 40%,#FBA1B7, #f67280);
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 5px 8px 5px 5px #ff2f447c;
+}
+.music-btn {
+    background-color: #f67280;
+    border-radius: 50%;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+  }
+.controls {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+  }
+  
+  .music-btn:hover {
+    color: #ff2f44;
+  }
+  
+  .playing {
+    text-align: center;
+  }
+   .musik .bar-music .bar-proses{
+    width: 30%;
+    background: black;
+    z-index: 1;
+  }
+  .musik .bar-music{
+    border-radius: 10px;
+    margin-top: 30px;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    position: relative;
+  }
+ 
+  .musik h2{
+    padding-top: 5px;
+  }
+
+/* SECTION TOP ARTIST */
+.top-artist{
+    padding-bottom: 20px;
+}
+.top-artist .album-artis{
+    display: flex;   
+    width: max-content;
+    gap: 1.3rem;
+}
+.top-artist .album-artis img{
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 5px 8px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.top-artist .album-artis .nama-artis{
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.top-artist .album-scroll{
+    width: 100% ;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.top-artist .album-scrol > .artis{
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+/* .album-scroll::-webkit-scrollbar{
+     display: none;
+    color: transparent;
+} */
+.aldi-taher{  
+    display: flex;
+    align-items: center;
+    padding: 50px 30px 50px 20px;
+    background: #FFE3E3;
+    border-radius: 24px;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.aldi-taher p{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-right: 50px;
+}
+.aldi-taher img{
+    height: 300px;
+    object-fit: cover;
+    margin-left: -60px;
+    margin-right: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.baskara{  
+    display: flex;
+    align-items: center;
+    padding: 50px 30px 50px 20px;
+    background: #FFE3E3;
+    border-radius: 24px;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.baskara p{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-right: 50px;
+}
+.baskara img{
+    height: 300px;
+    object-fit: cover;
+    margin-left: -60px;
+    margin-right: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 5px 5px rgba(0, 0, 0, 0.2);
+}
+  
+/* FOOTER SECTION */
+  .footer{
     display: block;
     flex-direction: column;
     justify-content: center;
@@ -271,75 +378,4 @@ section{
 .footer .box-container .box a:hover{
     padding-left: 10px;
     transition: 0.4s;
-}
-.top-artist{
-    padding-bottom: 20px;
-}
-.top-artist .album-artis{
-    display: flex;   
-    width: max-content;
-    gap: 1.3rem;
-}
-.top-artist .album-artis img{
-    width: 250px;
-    border-radius: 15px;
-    box-shadow: 5px 8px 5px 5px rgba(0, 0, 0, 0.2);
-}
-.top-artist .album-artis .nama-artis{
-    text-align: center;
-    font-weight: bolder;
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
-
-.top-artist .album-scroll{
-    width: 100% ;
-    overflow-x: scroll;
-}
-/* .album-scroll::-webkit-scrollbar{
-    display: none;
-} */
-.aldi-taher{  
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFE3E3 ;
-    border: 20px solid #FFE3E3;
-    border-radius: 20px;
-    margin-bottom: 40px;
-
-}
-.aldi-taher .aldi-kiri img{
-    border-radius: 20px;
-    box-shadow: 5px 8px 5px 5px rgba(0, 0, 0, 0.2);
-    margin-right: 30px;
-    margin-left: 30px;
-    width: 300px;
-}
-.aldi-taher .aldi-kanan p{
-    font-size: 1.5rem;
-    text-align: justify;
-    margin-right: 50px;
-}
-.baskara{   
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    background-color: #FFE3E3 ;
-    border: 20px solid #FFE3E3;
-    border-radius: 20px;
-
-}
-.baskara .baskara-kiri img{
-    border-radius: 20px;
-    box-shadow: 5px 8px 5px 5px rgba(0, 0, 0, 0.2);
-    margin-right: 30px;
-    margin-left: 30px;
-    width: 300px;
-}
-.baskara .baskara-kanan p{
-    font-size: 1.5rem;
-    text-align: justify;
-    margin-right: 50px;
 }
