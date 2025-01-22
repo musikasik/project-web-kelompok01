@@ -9,7 +9,7 @@
     scroll-behavior: smooth;
     }
 html{
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     overflow-x: hidden;
     font-size: 62.5%s;
 }
@@ -85,6 +85,36 @@ header .logo img{
     margin-left: 10px;
 }
 /* HEADER MENU */
+.search-bar-hide {
+    display: flex;
+    align-items: center;
+    background-color: #f1b1b1;
+    border-radius: 3.5rem;
+    padding: 1rem 1.5rem;
+    width: 45%;
+}
+.search-bar-hide i {
+    color: #fff;
+    margin-right: 1rem;
+}
+.search-bar-hide input {
+    background: none;
+    border: none;
+    color: #fff;
+    flex-grow: 1;
+    font-size: 1rem;
+    outline: none;
+}
+.search-bar-hide input::placeholder {
+    color: #fff;
+}
+.search-bar-hide .home-icon i {
+    color: #fff;
+}
+.search-bar-hide .cart-icon {
+    color: #fff;
+    margin-left: 10px;
+}
 header .menu a{
     position: relative;
     font-size: 1.2rem;
@@ -93,10 +123,10 @@ header .menu a{
     font-weight: bold;
     padding: 8px;
     margin-right: 15px;
-    border-bottom: .4rem solid #f67280;
+    border-bottom: .2rem solid #f67280;
 }
 header .menu a:hover{
-    border-bottom: .4rem solid white;
+    border-bottom: .2rem solid white;
     color: rgb(255, 255, 255);
     border-radius: 7px 20px 7px 20px;
     filter: drop-shadow(0 0 15px #f1b1b1) ;
@@ -224,10 +254,8 @@ section{
     box-shadow: .5rem .9rem .5rem .5rem #ff2f447c;
 }
 .music-btn {
-    background-color: #f67280;
-    border-radius: 50%;
-    color: white;
-    padding: 1.75rem;
+    background-color: #f6727f00;
+    color: black;
     font-size: 2.5rem;
     border: none;
     cursor: pointer;
@@ -248,20 +276,11 @@ section{
     padding-bottom: 2rem;
     text-align: center;
   }
-   .musik .bar-music .bar-proses{
-    width: 30%;
-    background: black;
-    z-index: 1;
-    border-radius: 1rem;
-    margin-top: 2rem;
-    height: .8rem;
-  }
-  .musik .bar-music{
-    border-radius: 1rem;
-    margin-top: 2rem;
+  
+  .musik .bar-music input{
     width: 100%;
-    height: .8rem;
-    background-color: white;
+    margin-top: 1rem;
+    accent-color: #ff2f44;
   }
  
 
@@ -398,8 +417,7 @@ section{
 
 
 
-
-header #toggler{
+header #toggler, .search-bar-hide{
     display: none;
 }
 header .fa-bars{
@@ -421,6 +439,11 @@ header .fa-bars{
     }
     section{
         padding: 2rem;
+    }
+    .musik{
+        position: relative;
+        margin: 3rem 28rem;
+        padding: 6rem 3rem; 
     }
 }
 
@@ -444,13 +467,25 @@ header .fa-bars{
         padding: 1.5rem;
         display: block;
     }
-
+    .search-bar-hide{
+        font-size: 1.5rem;
+        margin-left:  1.3rem;
+        display: flex;
+        width: 96%;
+    }
+    .search-bar-hide input::placeholder{
+        font-size: 1.3rem;
+    }
     .search-bar{
         position: absolute;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 
     }
-
+    .musik{
+        /* position: relative; */
+        margin: 1.5rem 10rem;
+        padding: 3rem 1.6rem;
+    }
     .baskara{
         flex-wrap: wrap;
         position: relative;
@@ -464,7 +499,7 @@ header .fa-bars{
         margin: 1.3rem;
     }
     .baskara h1{
-        text-align: center;
+        /* text-align: center; */
         padding-top: 2rem;
         margin-left: 20rem;
     }
@@ -474,7 +509,7 @@ header .fa-bars{
         position: relative;
     }
     .aldi-taher img{
-        position: relative;
+        /* position: relative; */
         align-content: center;
         margin: -8rem 0 0 20rem;
         border-radius: 50%;
@@ -483,7 +518,7 @@ header .fa-bars{
         margin: 1.3rem;
     }
     .aldi-taher h1{
-        text-align: center;
+        /* text-align: center; */
         padding-top: 2rem;
         margin-left: 24rem;
     }
